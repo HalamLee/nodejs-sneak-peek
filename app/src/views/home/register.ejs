@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/css/home/login.css" />
+    <script src="/js/home/login.js" defer></script>
     <script
       src="https://kit.fontawesome.com/34fbf3adf6.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/home/login.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
       <div class="grid">
         <form class="form login">
           <header class="login__header">
-            <h3 class="login__title">Login</h3>
+            <h3 class="login__title">SIGN UP</h3>
           </header>
 
           <div class="login__body">
@@ -27,16 +27,39 @@
             </div>
 
             <div class="form__field">
-              <input id="psword" type="password" placeholder="비밀번호" />
+              <input
+                id="name"
+                class="register__name"
+                type="text"
+                placeholder="이름"
+              />
+            </div>
+
+            <div class="form__field">
+              <input
+                id="psword"
+                class="register__psword"
+                type="password"
+                placeholder="비밀번호"
+              />
+            </div>
+
+            <div class="form__field">
+              <input
+                id="confirm-psword"
+                type="password"
+                placeholder="비밀번호 확인"
+              />
             </div>
           </div>
 
           <footer class="login__footer">
-            <input id="button" type="submit" value="Login" />
+            <input id="button" type="submit" value="Sign Up" />
 
             <p>
-              <span class="icon icon--info"><i class="fas fa-plus"></i></span
-              ><a href="/register">Create an account</a>
+              <span class="icon icon--info"
+                ><i class="fas fa-sign-in-alt"></i></span
+              ><a href="/login">Login</a>
             </p>
           </footer>
         </form>

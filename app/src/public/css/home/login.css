@@ -173,6 +173,16 @@ input[type='submit'] {
   border-top: 0;
 }
 
+.login input.register__name {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+.login input.register__psword {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .login input[type='submit'] {
   background-color: #1dabb8;
   border-radius: var(--loginInputBorderRadius);
